@@ -247,11 +247,11 @@ background-color: transparent;
     color: white;
 }
 
-.Proyects{
+.Projects{
     background-color: #101010;
 }
 
-.Proyects-text{
+.Projects-text{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -259,14 +259,14 @@ background-color: transparent;
     margin-bottom: 30px;
 }
 
-.Proyects-text h2{
+.Projects-text h2{
     color: white;
     font-size: 75px;
 
 }
 
 
-.Proyect-container{
+.Project-container{
     display: grid;
     grid-template-columns: repeat(3, 30fr);
     align-items: center;
@@ -288,4 +288,30 @@ background-color: transparent;
 .P-card:hover{
     scale: 1.2;
     cursor: pointer;
+    display: flex;
+}
+
+
+.icono{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 5px;
+    right: 50%;
+}
+
+.icono-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 5px;
+    right: 30%;
 }
