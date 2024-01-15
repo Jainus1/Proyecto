@@ -8,6 +8,9 @@
     box-sizing: border-box;
 } 
 
+.Music{
+    display: none;
+}
 
 .Yo{
     height: 100vh;
