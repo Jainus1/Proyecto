@@ -8,9 +8,6 @@
     box-sizing: border-box;
 } 
 
-.Music{
-    display: none;
-}
 
 .Yo{
     height: 100vh;
@@ -287,12 +284,14 @@ background-color: transparent;
     border-radius: 25px;
     position: relative;
     transition: .4s;
+    border: 5px solid #47abd2a0;
 }
 
 .P-card:hover{
     scale: 1.2;
     cursor: pointer;
     display: flex;
+    border-color: rgb(54, 139, 214);
 }
 
 
@@ -306,6 +305,12 @@ background-color: transparent;
     position: absolute;
     bottom: 5px;
     right: 50%;
+    transition: .4s;
+}
+
+.icono:hover{
+    
+    transform: translateY(-30px);
 }
 
 .icono-2{
@@ -318,4 +323,9 @@ background-color: transparent;
     position: absolute;
     bottom: 5px;
     right: 30%;
+    transition: .4s;
+}
+
+.icono-2:hover{
+    transform: translateY(-30px);
 }
