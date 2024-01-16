@@ -61,6 +61,7 @@ nav ul li a{
     text-decoration: none;
     font-weight: bold;
     text-transform: capitalize;
+    
 }
 
 nav ul li a:hover{
@@ -260,6 +261,20 @@ background-color: transparent;
 
 .pra p{
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+.pra a{
+    transition: 0.4s;
+}
+
+.pra a:hover{ 
+    transform: scale(1.2) translateY(10px);
+    background-color: transparent;
+    border: #24aa88 solid;
 }
 
 .Projects{
@@ -307,6 +322,19 @@ background-color: transparent;
     display: flex;
     border-color: rgb(54, 139, 214);
     animation: animate 2s linear infinite;
+}
+
+.card h5{
+    color: white;
+}
+
+.card a{
+    color: white;
+    border: 5px;
+    background-color: #25b0c6;
+    border-radius: 25px;
+    text-decoration: none;
+    padding: 6px;
 }
 
 @keyframes animate{
@@ -428,6 +456,7 @@ background-color: transparent;
     .P-card{
         width: 100px;
         height: 100px;
+        flex-wrap: wrap;
     }
     .newslatter{
         width: 50%;
@@ -466,11 +495,12 @@ background-color: transparent;
         top: 0;
         right: -100%;
         z-index: 100;
-        background-color: #191919;
-        transition: all 0,2s ease-in-out;
+        background-color: #101010;
+        transition: all 0.5s ease-in-out;
     }
     .menu li{
         margin-top: 40px;
+        
     }
     .menu li a{
         padding: 10px;
@@ -484,5 +514,13 @@ background-color: transparent;
      .btn{
         display: none
      }
+     .card a{
+        border: 2.5px;
+        text-decoration: none;
+        padding: 3px;
+    }
+    .pra a:hover{ 
+        transform: scale(1.001) translateY(2px);
+    }
 } 
 
