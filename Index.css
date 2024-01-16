@@ -192,7 +192,7 @@ h4{
     margin-bottom: 45px;
 }
 
-button{
+.downbutton{
     background-color: #25b0c6;
     color: white;
     text-decoration: none;
@@ -385,12 +385,42 @@ background-color: transparent;
     animation: animate2 1s linear infinite;
 }
 
+.open-menu, .close-menu{
+    position: absolute;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+
+}
+
+.open-menu {
+    top: 7%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.close-menu {
+    top: 5.6%;
+    right: 20px;
+}
+.menu{
+    display: flex;
+}
+
+#check{
+    display: none;
+}
+
 @media screen and (max-width: 600px){
     h1{
         font-size: 30px;
     }
     h3{
         font-size: 15px;
+    }
+    h4{
+        font-size: 13px;
     }
     .logo{
         font-size: 20px;
@@ -411,5 +441,48 @@ background-color: transparent;
         font-size: 30px;
         width: 50%;
     }
+    .icono{
+        width: 25px;
+        height: 25px;
+    }
+    .icono-2{
+        width: 25px;
+        height: 25px;
+        right: 25%;
+    }
+    .about-text h2{
+        font-size: 30px;
+    }
+    h5{
+        font-size: 18px;
+    }
+    .menu{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: #191919;
+        transition: all 0,2s ease-in-out;
+    }
+    .menu li{
+        margin-top: 40px;
+    }
+    .menu li a{
+        padding: 10px;
+    }
+    .open-menu, .close-menu {
+        display: block;
+    }
+    #check:checked ~ .menu{
+        right: 0;
+     }
+     .btn{
+        display: none
+     }
 } 
 
