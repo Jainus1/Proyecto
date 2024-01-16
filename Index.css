@@ -8,6 +8,8 @@
     box-sizing: border-box;
 } 
 
+
+
 .Music{
     display: none;
 }
@@ -18,6 +20,9 @@
     background-image: url(1858934.jpg);
     background-size: cover;
     background-position: center;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
 }
 
 nav{
@@ -89,7 +94,7 @@ nav ul li a:hover{
 h1{
     color: white;
     margin: 20px 0px 20px;
-    font-size: 75px;
+    font-size: clamp(20px, 10vh, 75px);
     background: -webkit-linear-gradient(30deg, #262f39, #94ddec) ;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -137,6 +142,12 @@ h4{
     border-radius: 30px;
     background-color: #25b0c6;
     color: #03080f;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.newslatter form input:last-child:hover{
+    transform: translateX(11px)   scale(1.2);
 }
 
 .about{
@@ -147,7 +158,7 @@ h4{
 }
 
 .about-text{
-    width: 550px;
+    width: 50%;
 }
 
 .main{
@@ -295,6 +306,29 @@ background-color: transparent;
     cursor: pointer;
     display: flex;
     border-color: rgb(54, 139, 214);
+    animation: animate 2s linear infinite;
+}
+
+@keyframes animate{
+    from{
+        border-color: rgb(54, 139, 214);
+    }
+    30%{
+        border-color: #24aa88;
+    }
+
+    40%{
+        border-color: #45dbb5;
+    }
+    50%{
+        border-color: #712495;
+    }
+    60%{
+        border-color: #7233a8;
+    }
+    to{
+        border-color: rgb(54, 139, 214);
+    }
 }
 
 
@@ -309,11 +343,29 @@ background-color: transparent;
     bottom: 5px;
     right: 50%;
     transition: .4s;
+    
+}
+
+@keyframes animate2{
+    from{
+        transform: translateY(0px);
+    }
+    10%{
+       transform: translateY(-15px); 
+    }
+
+    20%{
+        transform: translateY(-30px);
+    }
+    
+    to{
+        transform: translateY(0px);
+    }
 }
 
 .icono:hover{
     
-    transform: translateY(-30px);
+    animation: animate2 1s linear infinite;
 }
 
 .icono-2{
@@ -330,5 +382,34 @@ background-color: transparent;
 }
 
 .icono-2:hover{
-    transform: translateY(-30px);
+    animation: animate2 1s linear infinite;
 }
+
+@media screen and (max-width: 600px){
+    h1{
+        font-size: 30px;
+    }
+    h3{
+        font-size: 15px;
+    }
+    .logo{
+        font-size: 20px;
+    }
+    .P-card{
+        width: 100px;
+        height: 100px;
+    }
+    .newslatter{
+        width: 50%;
+    }
+    .card{
+        width: 50%;
+        height: 50%;
+        padding: 0;
+    }
+    .title h2{
+        font-size: 30px;
+        width: 50%;
+    }
+} 
+
